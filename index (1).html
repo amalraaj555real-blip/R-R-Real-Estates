@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R&amp;R Real Estates | Somanur - Residential Homes, Land &amp; Plots</title>
+  <meta name="description" content="R&R Real Estates, Karumathampatty Somanur. Residential homes, land sales and purchases, plots and properties, real estate consultation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav">
+      <a href="#home" class="logo">
+        <span class="logo-rr">R<span>&amp;</span>R</span>
+        <span class="logo-text">REAL ESTATES</span>
+      </a>
+      <nav>
+        <ul class="menu" id="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="tel:+919655752929" class="btn btn-gold small">Call Now</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1><span class="rr">R<span>&amp;</span>R</span> Real Estates</h1>
+        <p class="tagline">Your Dream... Our Priority...</p>
+        <p class="hero-sub">Find your perfect home, land or plot in Somanur and nearby areas with trusted guidance at every step.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-navy">Enquire Now</a>
+          <a href="tel:+919655752929" class="btn btn-gold">&#9742; 96557 52929</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <!-- Put your house photo at images/house.jpg -->
+        <img src="images/house.jpg" alt="Modern residential home" onerror="this.style.display='none';this.parentElement.classList.add('no-img')">
+        <div class="img-fallback">&#127969;</div>
+      </div>
+    </div>
+    <div class="gold-wave"></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="title">Our Services</h2>
+      <div class="line"></div>
+      <div class="cards">
+        <div class="card reveal">
+          <div class="icon">&#127968;</div>
+          <h3>Residential Homes</h3>
+          <p>Beautiful, well-built homes for families, in prime and peaceful locations.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">&#127806;</div>
+          <h3>Land Sales &amp; Purchases</h3>
+          <p>Safe and transparent land deals with clear documents and fair pricing.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">&#128205;</div>
+          <h3>Plots &amp; Properties</h3>
+          <p>Approved plots and investment properties with great growth potential.</p>
+        </div>
+        <div class="card reveal">
+          <div class="icon">&#129309;</div>
+          <h3>Real Estate Consultation</h3>
+          <p>Honest advice on buying, selling and investing, from start to registration.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-box reveal">
+        <h2 class="title left">About Us</h2>
+        <div class="line left"></div>
+        <p>R&amp;R Real Estates is a trusted real estate service based in Karumathampatty, Somanur. We help families and investors buy, sell and find the right property with honesty and care.</p>
+        <p>Led by <strong>Amalraj B</strong>, our goal is simple: <em>Your Dream... Our Priority...</em></p>
+      </div>
+      <div class="stats">
+        <div class="stat reveal"><b data-count="100">0</b><span>+ Happy Clients</span></div>
+        <div class="stat reveal"><b data-count="150">0</b><span>+ Properties</span></div>
+        <div class="stat reveal"><b data-count="5">0</b><span>+ Years Experience</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="title light">Contact Us</h2>
+      <div class="line"></div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Amalraj B</h3>
+          <p class="ci"><span>&#128222;</span> <a href="tel:+919655752929">96557 52929</a></p>
+          <p class="ci"><span>&#128222;</span> <a href="tel:+919655957383">96559 57383</a></p>
+          <p class="ci"><span>&#128205;</span> Karumathampatty, Somanur - 641659</p>
+          <a class="btn btn-gold" href="https://wa.me/919655752929" target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+
+        <form class="form" id="enquiryForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="tel" id="phone" placeholder="Mobile Number" pattern="[0-9]{10}" title="Enter 10 digit mobile number" required>
+          <select id="interest" required>
+            <option value="">I am interested in...</option>
+            <option>Residential Homes</option>
+            <option>Land Sales &amp; Purchases</option>
+            <option>Plots &amp; Properties</option>
+            <option>Real Estate Consultation</option>
+          </select>
+          <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn-gold">Send via WhatsApp</button>
+          <p class="note" id="formNote"></p>
+        </form>
+      </div>
+
+      <div class="map">
+        <iframe title="Somanur map" loading="lazy"
+          src="https://www.google.com/maps?q=Karumathampatty+Somanur+641659&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> R&amp;R Real Estates. All rights reserved. | Karumathampatty Somanur - 641659</p>
+  </footer>
+
+  <!-- Floating buttons -->
+  <a class="float wa" href="https://wa.me/919655752929" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+  <a class="float call" href="tel:+919655752929" aria-label="Call">&#9742;</a>
+  <button class="top" id="topBtn" aria-label="Back to top">&#8593;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
